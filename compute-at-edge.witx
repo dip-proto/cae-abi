@@ -266,9 +266,7 @@
     (@interface func (export "pending_req_poll")
         (param $h $pending_request_handle)
         (result $err (expected
-                (tuple $is_done
-                    $response_handle
-                    $body_handle)
+                (tuple $is_done $response_handle $body_handle)
                 (error $fastly_status)))
     )
 
